@@ -48,4 +48,17 @@ elif user_choice > computer_choice:
   print("You win!")
 elif computer_choice == user_choice:
   print("It's a draw")
+else:
+    print("Enter a valid choice")
+  
+
+
+while True:
+    play_game()
+    
+    # Ask the user if they want to play again
+    play_again = input("Do you want to play again? Type 'yes' to continue or 'no' to stop: ").lower()
+    if play_again != 'yes':
+        print("Thanks for playing!")
+        break
 
