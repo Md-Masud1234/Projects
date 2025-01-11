@@ -12,7 +12,7 @@ options = ["rock","paper","scissors"]
 def game():
     user_input = input("Enter (rock/ paper/ scissors):").lower()
     if user_input not in options:
-        print("Invalid Choice")
+        print("Enter a valid Choice")
         return
     computer_choice = choices(options)
     print("User Choice is:",user_input)
